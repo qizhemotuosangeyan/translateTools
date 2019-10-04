@@ -1,0 +1,16 @@
+PODS:
+  - SwiftHash (2.0.2)
+
+DEPENDENCIES:
+  - SwiftHash
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftHash
+
+SPEC CHECKSUMS:
+  SwiftHash: 6d312abe61c8359bdef8d0093642f3a70b1c17ba
+
+PODFILE CHECKSUM: 84ad0efbc6a6244167e2b0a8dc5dd2bb90f2eb0c
+
+COCOAPODS: 1.7.5

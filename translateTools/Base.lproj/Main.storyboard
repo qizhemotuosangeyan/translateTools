@@ -22,20 +22,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3bI-Lr-Whf">
-                                <rect key="frame" x="15" y="77" width="763.5" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="PdJ-wa-WDN"/>
-                                </constraints>
+                                <rect key="frame" x="15" y="77" width="384" height="327"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <mask key="constraints">
-                                        <exclude reference="PdJ-wa-WDN"/>
-                                    </mask>
-                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fm-Jx-ECe">
-                                <rect key="frame" x="20" y="382" width="374" height="70"/>
+                                <rect key="frame" x="20" y="409" width="188" height="70"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="ZXg-tE-g8m"/>
@@ -43,12 +35,12 @@
                                 <state key="normal" title="translate"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pY2-E2-4b7">
-                                <rect key="frame" x="15" y="457" width="763.5" height="300"/>
+                                <rect key="frame" x="15" y="484" width="384" height="327.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐习惯右手写字的人将本工具以1/4分屏的形式放在左边" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYO-oP-6e8">
-                                <rect key="frame" x="15" y="807" width="384" height="40"/>
+                                <rect key="frame" x="15" y="812" width="384" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="POK-Zi-xTB"/>
                                 </constraints>
@@ -61,12 +53,12 @@
                                 <variation key="heightClass=regular-widthClass=regular" hidden="YES"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXg-hC-rjA">
-                                <rect key="frame" x="20" y="382" width="374" height="70"/>
+                                <rect key="frame" x="206" y="409" width="188" height="70"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="paste"/>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SY-cE-iRj">
-                                <rect key="frame" x="20" y="382" width="374" height="70"/>
+                                <rect key="frame" x="20" y="409" width="188" height="70"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="camera"/>
                                 <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
@@ -75,6 +67,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="pY2-E2-4b7" firstAttribute="width" secondItem="3bI-Lr-Whf" secondAttribute="width" id="0PJ-0e-D2p"/>
+                            <constraint firstItem="3bI-Lr-Whf" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.4" id="6bY-jh-IZu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3bI-Lr-Whf" secondAttribute="trailing" constant="15" id="7Lm-JM-2H6"/>
                             <constraint firstItem="5SY-cE-iRj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8EY-Rl-dYq"/>
                             <constraint firstItem="3bI-Lr-Whf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aki-v1-Mtg"/>
@@ -94,7 +87,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iXg-hC-rjA" secondAttribute="trailing" constant="20" id="X5i-Vz-9LS"/>
                             <constraint firstItem="3bI-Lr-Whf" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="YgY-Oi-qfz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JYO-oP-6e8" secondAttribute="trailing" constant="15" id="b4x-0h-0p1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JYO-oP-6e8" secondAttribute="bottom" constant="15" id="ht4-SQ-c3F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JYO-oP-6e8" secondAttribute="bottom" constant="10" id="ht4-SQ-c3F"/>
                             <constraint firstItem="pY2-E2-4b7" firstAttribute="height" secondItem="3bI-Lr-Whf" secondAttribute="height" id="i2i-OQ-qtv"/>
                             <constraint firstItem="3bI-Lr-Whf" firstAttribute="top" secondItem="rpC-9j-coJ" secondAttribute="bottom" id="joH-F8-IZQ"/>
                             <constraint firstItem="rpC-9j-coJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nXq-xp-fBQ"/>
