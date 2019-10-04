@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		EE6C1F092347707B008FE274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6C1F072347707B008FE274 /* Main.storyboard */; };
 		EE6C1F0B23477081008FE274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6C1F0A23477081008FE274 /* Assets.xcassets */; };
 		EE6C1F0E23477081008FE274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6C1F0C23477081008FE274 /* LaunchScreen.storyboard */; };
+		EE6C1F182347A7CB008FE274 /* BaiduAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C1F172347A7CB008FE274 /* BaiduAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EE6C1F0A23477081008FE274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE6C1F0D23477081008FE274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE6C1F0F23477081008FE274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE6C1F172347A7CB008FE274 /* BaiduAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiduAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,6 @@
 				1164E9723F09F5866D2A941D /* Pods-translateTools.debug.xcconfig */,
 				DEE1625A51C4706E35C18111 /* Pods-translateTools.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -84,6 +85,7 @@
 				EE6C1F012347707B008FE274 /* AppDelegate.swift */,
 				EE6C1F032347707B008FE274 /* SceneDelegate.swift */,
 				EE6C1F052347707B008FE274 /* ViewController.swift */,
+				EE6C1F172347A7CB008FE274 /* BaiduAPI.swift */,
 				EE6C1F072347707B008FE274 /* Main.storyboard */,
 				EE6C1F0A23477081008FE274 /* Assets.xcassets */,
 				EE6C1F0C23477081008FE274 /* LaunchScreen.storyboard */,
@@ -207,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE6C1F182347A7CB008FE274 /* BaiduAPI.swift in Sources */,
 				EE6C1F062347707B008FE274 /* ViewController.swift in Sources */,
 				EE6C1F022347707B008FE274 /* AppDelegate.swift in Sources */,
 				EE6C1F042347707B008FE274 /* SceneDelegate.swift in Sources */,

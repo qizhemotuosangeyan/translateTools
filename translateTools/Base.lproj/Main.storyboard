@@ -56,12 +56,18 @@
                                 <rect key="frame" x="206" y="409" width="188" height="70"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="paste"/>
+                                <connections>
+                                    <action selector="pasteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7f-r7-M42"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SY-cE-iRj">
                                 <rect key="frame" x="20" y="409" width="188" height="70"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="camera"/>
                                 <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
+                                <connections>
+                                    <action selector="translateBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lso-tA-Mqx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -120,6 +126,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="3bI-Lr-Whf" id="TFp-Or-oNw"/>
+                        <outlet property="outputTextField" destination="pY2-E2-4b7" id="pFY-Uf-yLj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
