@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="API：百度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpC-9j-coJ">
-                                <rect key="frame" x="356" y="0.0" width="122" height="32.5"/>
+                                <rect key="frame" x="356" y="15" width="122" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,26 +35,29 @@
                                 <variation key="heightClass=regular-widthClass=regular" hidden="YES"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="请点击开始输入或者点击“paste”读取并剪切板内容" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ly1-su-WiM">
-                                <rect key="frame" x="15" y="47.5" width="392" height="1009.5"/>
+                                <rect key="frame" x="15" y="62.5" width="392" height="1009.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avC-61-CdM">
-                                <rect key="frame" x="609" y="1062" width="210" height="57"/>
+                                <rect key="frame" x="609" y="1077" width="210" height="45"/>
                                 <color key="backgroundColor" red="0.76053452079999995" green="0.93087393419999998" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="translate"/>
+                                <connections>
+                                    <action selector="translateBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8K-Lf-FlW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFY-Rm-L8q">
-                                <rect key="frame" x="427" y="47.5" width="392" height="1009.5"/>
+                                <rect key="frame" x="427" y="62.5" width="392" height="1009.5"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YE2-H3-Nd4">
-                                <rect key="frame" x="15" y="1062" width="210" height="57"/>
+                                <rect key="frame" x="15" y="1077" width="210" height="45"/>
                                 <color key="backgroundColor" red="0.76053452079999995" green="0.93087393419999998" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" id="9vU-FW-d1L"/>
@@ -69,22 +72,28 @@
                                 </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9u-7o-49P">
-                                <rect key="frame" x="312" y="1062" width="210" height="57"/>
+                                <rect key="frame" x="312" y="1077" width="210" height="45"/>
                                 <color key="backgroundColor" red="0.76053452079999995" green="0.93087393419999998" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="210" id="FpY-sP-lYu"/>
+                                    <constraint firstAttribute="height" constant="45" id="ikt-Mg-Bxa"/>
                                 </constraints>
                                 <state key="normal" title="paste"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="FpY-sP-lYu"/>
+                                        <exclude reference="ikt-Mg-Bxa"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
                                         <include reference="FpY-sP-lYu"/>
+                                        <include reference="ikt-Mg-Bxa"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="pasteBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQH-Yp-tpO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,7 +104,7 @@
                             <constraint firstItem="JYO-oP-6e8" firstAttribute="top" secondItem="kFY-Rm-L8q" secondAttribute="bottom" constant="15" id="4HO-ra-83D"/>
                             <constraint firstItem="X9u-7o-49P" firstAttribute="trailing" secondItem="Ly1-su-WiM" secondAttribute="trailing" id="6ez-1A-fLm"/>
                             <constraint firstItem="YE2-H3-Nd4" firstAttribute="top" secondItem="JYO-oP-6e8" secondAttribute="bottom" id="8Sg-vM-5Xf"/>
-                            <constraint firstItem="rpC-9j-coJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AxD-5X-5yb"/>
+                            <constraint firstItem="rpC-9j-coJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="AxD-5X-5yb"/>
                             <constraint firstItem="avC-61-CdM" firstAttribute="width" secondItem="X9u-7o-49P" secondAttribute="width" id="BYq-4d-tMb"/>
                             <constraint firstItem="avC-61-CdM" firstAttribute="width" secondItem="Ly1-su-WiM" secondAttribute="width" multiplier="0.49" id="DrJ-mu-6vz"/>
                             <constraint firstItem="kFY-Rm-L8q" firstAttribute="width" secondItem="Ly1-su-WiM" secondAttribute="width" id="GZm-uH-7KN"/>
@@ -107,7 +116,6 @@
                             <constraint firstItem="Ly1-su-WiM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="PtL-co-0hQ"/>
                             <constraint firstItem="kFY-Rm-L8q" firstAttribute="width" secondItem="Ly1-su-WiM" secondAttribute="width" id="QDY-to-2P7"/>
                             <constraint firstItem="kFY-Rm-L8q" firstAttribute="height" secondItem="Ly1-su-WiM" secondAttribute="height" id="Qom-Hz-e3C"/>
-                            <constraint firstItem="JYO-oP-6e8" firstAttribute="top" secondItem="X9u-7o-49P" secondAttribute="bottom" constant="5" id="Qrn-p6-q7O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kFY-Rm-L8q" secondAttribute="trailing" constant="15" id="S23-7C-E65"/>
                             <constraint firstItem="YE2-H3-Nd4" firstAttribute="width" secondItem="X9u-7o-49P" secondAttribute="width" id="U0G-K6-FlH"/>
                             <constraint firstItem="avC-61-CdM" firstAttribute="height" secondItem="X9u-7o-49P" secondAttribute="height" id="UtA-SV-TId"/>
@@ -149,7 +157,6 @@
                                 <exclude reference="fId-zC-b5n"/>
                                 <exclude reference="cy6-8z-PZl"/>
                                 <exclude reference="q9a-iU-3C4"/>
-                                <exclude reference="Qrn-p6-q7O"/>
                                 <exclude reference="U0G-K6-FlH"/>
                                 <exclude reference="aIv-wh-g3e"/>
                                 <exclude reference="iR7-eJ-443"/>
@@ -188,7 +195,6 @@
                                 <exclude reference="pue-af-3Pq"/>
                                 <include reference="q9a-iU-3C4"/>
                                 <exclude reference="4HO-ra-83D"/>
-                                <include reference="Qrn-p6-q7O"/>
                                 <exclude reference="8Sg-vM-5Xf"/>
                                 <exclude reference="J4q-0s-xsS"/>
                                 <include reference="U0G-K6-FlH"/>
@@ -198,6 +204,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="Ly1-su-WiM" id="IDp-ga-Kzs"/>
+                        <outlet property="outputLabel" destination="kFY-Rm-L8q" id="gaf-V9-ftv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

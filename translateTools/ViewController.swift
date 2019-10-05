@@ -11,9 +11,10 @@ import Alamofire
 import SwiftyJSON
 class ViewController: UIViewController {
     let url = "https://fanyi-api.baidu.com/api/trans/vip/translate"
-    @IBOutlet weak var inputTextField: UITextField!
+
+    @IBOutlet weak var inputTextField: UITextView!
+    @IBOutlet weak var outputLabel: UILabel!
     
-    @IBOutlet weak var outputTextField: UITextField!
     @IBAction func translateBtn(_ sender: UIButton) {
         getHttpsRequest()
         print("hahahahhahaa***************")
@@ -28,7 +29,7 @@ class ViewController: UIViewController {
         let parameters = BaiduAPI(question: inputTextField.text ?? "").params
         Alamofire.request(url, method: .get, parameters: parameters).responseJSON { (response) in
             if(response.result.isSuccess){
-                self.outputTextField.text = JSON(response.result.value!)["trans_result"][0]["dst"].stringValue
+                self.outputLabel.text = JSON(response.result.value!)["trans_result"][0]["dst"].stringValue
                 print(response.request!)
                 print(JSON(response.result.value!)["trans_result"][0]["dst"])
             }
