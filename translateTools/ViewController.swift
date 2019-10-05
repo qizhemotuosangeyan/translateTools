@@ -16,10 +16,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var outputTextField: UITextField!
     @IBAction func translateBtn(_ sender: UIButton) {
         getHttpsRequest()
+        print("hahahahhahaa***************")
     }
     @IBAction func pasteBtn(_ sender: UIButton) {
         print(inputTextField.text ?? "")
         //MARK: - 在这里粘贴剪切板的内容
+        getPasteBoard()
         getHttpsRequest()
     }
     func getHttpsRequest() {
@@ -33,10 +35,18 @@ class ViewController: UIViewController {
         }
 
     }
-    
+    func getPasteBoard() {
+         let pasteBoard = UIPasteboard.general
+        inputTextField.text = pasteBoard.string ?? ""
+         print(pasteBoard.string ?? "")
+     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        config()
         // Do any additional setup after loading the view.
+    }
+    func config() {
+        
     }
 
 }
